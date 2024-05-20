@@ -9,7 +9,13 @@ const router = createBrowserRouter([
         <div className="max-w-16">
           <Logo />
         </div>
-        <h1>Hello World</h1>
+        <h1 className="~text-base/3xl">Hello World</h1>
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+        <h4>Hello World</h4>
+        <h5>Hello World</h5>
+        <h6>Hello World</h6>
+        <p>Hello World</p>
       </div>
     ),
   },
