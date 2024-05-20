@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Logo from "./components/Logo";
+import Logo from "src/components/Logo";
 
 const router = createBrowserRouter([
   {
