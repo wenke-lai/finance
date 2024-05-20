@@ -1,5 +1,3 @@
-// import logo.png from "./assets/logo.png" and render it with custom styles in logo component
-
 import logo from "src/assets/logo.png";
 
 const Logo = () => {
