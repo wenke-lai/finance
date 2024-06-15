@@ -1,7 +1,15 @@
-import logo from "src/assets/logo.png";
+import LogoIcon from "src/assets/logo.svg?react";
 
-const Logo = () => {
-  return <img src={logo} alt="Logo" className="w-full h-auto rounded-full" />;
+type LogoProps = {
+  className?: string;
+};
+
+const Logo: React.FC<LogoProps> = ({ className }) => {
+  return (
+    <div className={className}>
+      <LogoIcon />
+    </div>
+  );
 };
 
 export default Logo;
