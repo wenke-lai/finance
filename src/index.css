@@ -75,6 +75,21 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  button {
+    /* size */
+    @apply px-2 py-1 active:scale-95;
+    /* layout */
+    @apply flex justify-center gap-2 align-middle;
+    /* border */
+    @apply border rounded-md border-foreground;
+  }
+
+  a {
+    @apply underline;
+  }
+}
+
 @layer utilities {
   .debug {
     @apply border border-red-500;

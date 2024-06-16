@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Logo from "src/components/Logo";
+import { Auth } from "src/pages/auth";
 import Home from "src/pages/home";
 
 const router = createBrowserRouter([
@@ -24,6 +25,14 @@ const router = createBrowserRouter([
           </div>
         ),
       },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <Auth.Layout />,
+    children: [
+      { index: true, element: <Auth.Landing /> },
+      { path: "login", element: <Auth.Login /> },
     ],
   },
   {
